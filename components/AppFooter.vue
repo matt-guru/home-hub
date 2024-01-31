@@ -1,6 +1,9 @@
 <template>
   <footer class="fixed inset-x-0 bottom-0 flex justify-around border-t border-gray-200 bg-white shadow-lg">
-    <NuxtLink to="/" class="w-[50%] flex flex-col items-center justify-center text-gray-300 p-4">
+    <NuxtLink
+      to="/"
+      class="w-[50%] flex flex-col items-center justify-center text-gray-400 hover:text-gray-700 transition-all p-4"
+    >
       <svg
         class="w-6 h-6 mb-1 group-hover:text-blue-600"
         fill="currentColor"
@@ -15,7 +18,10 @@
       <span class="text-sm group-hover:text-blue-600">Home</span>
     </NuxtLink>
 
-    <NuxtLink to="/to-dos" class="w-[50%] flex flex-col items-center justify-center text-gray-300 p-4">
+    <NuxtLink
+      to="/to-dos"
+      class="w-[50%] flex flex-col items-center justify-center text-gray-400 hover:text-gray-700 transition-all p-4"
+    >
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
         <path
           fill="currentColor"
@@ -26,7 +32,10 @@
       </svg>
       <div class="text-sm">To-dos</div>
     </NuxtLink>
-    <NuxtLink to="/calendar" class="w-[50%] flex flex-col items-center justify-center text-gray-300 p-4">
+    <NuxtLink
+      to="/calendar"
+      class="w-[50%] flex flex-col items-center justify-center text-gray-400 hover:text-gray-700 transition-all p-4"
+    >
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
         <path
           fill="currentColor"
@@ -42,7 +51,7 @@
 
 <style scoped>
 .router-link-active {
-  @apply text-gray-500;
+  @apply text-gray-700;
   @apply transition-all;
 }
 </style>
