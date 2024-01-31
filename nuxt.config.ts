@@ -8,7 +8,5 @@ export default defineNuxtConfig({
     },
   },
   modules: ['@nuxtjs/tailwindcss'],
-  router: {
-    linkActiveClass: 'my-custom-exact-active-link'
-  }
+  ssr: false,
 })
