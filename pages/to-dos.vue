@@ -11,7 +11,7 @@
 
         <section class="flex w-full pt-6">
           <template v-for="user in data[0].people">
-            <div class="flex-shrink-0">
+            <div class="flex-shrink-0 w-64 mr-4">
               <template v-for="task in user['to-dos']" :key="task.id">
                 <TodoItem
                   :task="task"
@@ -31,12 +31,13 @@
 
 <script setup>
 import { ref } from 'vue'
+import { v4 as uuidv4 } from 'uuid'
 
 const createTodo = userId => {
   const user = data.value[0].people.find(u => u.id === userId)
-
   if (user) {
     user['to-dos'].push({
+      id: uuidv4(),
       title: 'New Todo',
       due_date: '2023-02-02',
       status: 'pending'
@@ -75,25 +76,25 @@ const data = ref([
         image: 'kermit.jpeg',
         'to-dos': [
           {
-            id: 10,
+            id: uuidv4(),
             title: 'Kermit task 1',
             due_date: '2023-02-02',
             status: 'pending'
           },
           {
-            id: 11,
+            id: uuidv4(),
             title: 'Kermit task 2',
             due_date: '2023-02-02',
             status: 'pending'
           },
           {
-            id: 12,
+            id: uuidv4(),
             title: 'Kermit task 3',
             due_date: '2023-02-02',
             status: 'pending'
           },
           {
-            id: 13,
+            id: uuidv4(),
             title: 'Kermit task 4',
             due_date: '2023-02-02',
             status: 'pending'
@@ -107,13 +108,15 @@ const data = ref([
         image: 'gonzo.jpeg',
         'to-dos': [
           {
-            id: 14,
+            id: uuidv4(),
+
             title: 'Gonzo task 1',
             due_date: '2023-02-02',
             status: 'pending'
           },
           {
-            id: 15,
+            id: uuidv4(),
+
             title: 'Gonzo task 2',
             due_date: '2023-02-02',
             status: 'pending'
@@ -127,7 +130,7 @@ const data = ref([
         image: 'beaker.jpeg',
         'to-dos': [
           {
-            id: 16,
+            id: uuidv4(),
             title: 'Beaker task 1',
             due_date: '2023-02-02',
             status: 'pending'

@@ -4,13 +4,7 @@
   >
     <div v-if="!editing" class="p-4" @click="startEditing">{{ props.task.title }}</div>
     <div v-if="editing" class="p-4">
-      <input
-        v-model="editedTitle"
-        @input="updateTitle"
-        @blur="stopEditing"
-        @keyup.enter="stopEditing"
-        class="w-full border rounded p-2"
-      />
+      <input v-model="editedTitle" @blur="stopEditing" @keyup.enter="stopEditing" class="w-full border rounded p-2" />
     </div>
     <div class="flex gap-3 p-4">
       <button
@@ -21,20 +15,17 @@
       </button>
     </div>
   </div>
+  <!-- border-s-orange-500 border-s-blue-500 border-s-green-500 -->
 </template>
 
 <script setup>
 import { ref, computed, defineProps, defineEmits, nextTick } from 'vue'
 
 const props = defineProps(['task', 'color', 'userId'])
-const emits = defineEmits(['updateTaskTitle', 'removeTask']) // Add 'removeTask' to emitted events
+const emits = defineEmits(['updateTaskTitle', 'removeTask'])
 
 const editing = ref(false)
 const editedTitle = ref(props.task.title)
-
-const taskToEdit = computed(() => {
-  return data.value[0].people.find(u => u.id === props.userId)?.['to-dos'].find(t => t.id === props.task.id)
-})
 
 const startEditing = () => {
   editing.value = true
@@ -47,8 +38,6 @@ const stopEditing = async () => {
 
   emits('updateTaskTitle', { userId: props.userId, taskId: props.task.id, newTitle: editedTitle.value })
 }
-
-const updateTitle = () => {}
 
 const completeTask = () => {
   emits('removeTask', { userId: props.userId, taskId: props.task.id })
