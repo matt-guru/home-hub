@@ -9,17 +9,17 @@
 
       <header class="grid grid-flow-col gap-4">
         <div class="flex columns-1 flex-col text-center">
-          <img class="w-24 h-24 rounded-full mx-auto" src="~/assets/img/kermit.jpeg" alt="" width="384" height="512">
+          <img class="w-24 h-24 rounded-full mx-auto" src="/img/kermit.jpeg" alt="" width="384" height="512">
           <h2 class="mb-2">Name </h2>
           <button class="w-full pointer-events-auto rounded-md px-3 py-2 text-sm font-semibold leading-5 ring-1 ring-slate-900/10 text-gray-500 hover:text-white hover:bg-indigo-500">+ New</button>
         </div>
         <div class="flex columns-1 flex-col text-center">
-          <img class="w-24 h-24 rounded-full mx-auto" src="~/assets/img/gonzo.jpeg" alt="" width="384" height="512">
+          <img class="w-24 h-24 rounded-full mx-auto" src="/img/gonzo.jpeg" alt="" width="384" height="512">
           <h2 class="mb-2">Name </h2>
           <button class="w-full pointer-events-auto rounded-md px-3 py-2 text-sm font-semibold leading-5 ring-1 ring-slate-900/10 text-gray-500 hover:text-white hover:bg-indigo-500">+ New</button>
         </div>
         <div class="flex columns-1 flex-col text-center">
-          <img class="w-24 h-24 rounded-full mx-auto" src="~/assets/img/beaker.jpeg" alt="" width="384" height="512">
+          <img class="w-24 h-24 rounded-full mx-auto" src="/img/beaker.jpeg" alt="" width="384" height="512">
           <h2 class="mb-2">Name </h2>
           <button class="w-full pointer-events-auto rounded-md px-3 py-2 text-sm font-semibold leading-5 ring-1 ring-slate-900/10 text-gray-500 hover:text-white hover:bg-indigo-500">+ New</button>
         </div>
