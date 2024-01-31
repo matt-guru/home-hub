@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-shrink-0 w-64 flex flex-col text-center ml-4">
+  <div class="flex-shrink-0 w-64 flex flex-col text-center mr-4">
     <img class="w-24 h-24 rounded-full mx-auto" :src="`./img/${props.user.image}`" alt="" width="384" height="512" />
     <h2 class="mb-2">{{ props.user.name }}</h2>
     <button

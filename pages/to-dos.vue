@@ -4,7 +4,7 @@
       <h1 class="text-xl">To-dos</h1>
     </section>
     <div class="mx-auto overflow-x-auto pb-20">
-      <div class="flex flex-wrap">
+      <div class="flex flex-wrap mx-4">
         <header class="flex w-full">
           <User v-for="user in data[0].people" :user="user" />
         </header>

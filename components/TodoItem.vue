@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`flex-shrink-0 w-64 ml-4 rounded-lg bg-white text-lg text-left leading-5 text-slate-900 shadow-xl shadow-black/5 ring-1 ring-slate-700/10 mb-4 border-l-4 border-s-${props.color}-500`"
+    :class="`flex-shrink-0 w-64 mr-4 rounded-lg bg-white text-lg text-left leading-5 text-slate-900 shadow-xl shadow-black/5 ring-1 ring-slate-700/10 mb-4 border-l-4 border-s-${props.color}-500`"
   >
     <div class="p-4">{{ props.task.title }}</div>
     <div class="flex gap-3 p-4">
