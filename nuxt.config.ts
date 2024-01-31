@@ -7,5 +7,8 @@ export default defineNuxtConfig({
       buildAssetsDir: 'assets',
     },
   },
-  modules: ['@nuxtjs/tailwindcss']
+  modules: ['@nuxtjs/tailwindcss'],
+  router: {
+    linkActiveClass: 'my-custom-exact-active-link'
+  }
 })
