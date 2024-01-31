@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-import { ref, computed, defineProps, defineEmits, nextTick } from 'vue'
+import { ref, nextTick } from 'vue'
 
 const props = defineProps(['task', 'color', 'userId'])
 const emits = defineEmits(['updateTaskTitle', 'removeTask'])
