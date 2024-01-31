@@ -18,4 +18,7 @@ const props = defineProps({
   task: Object,
   color: String
 })
+// border-s-orange-500
+// border-s-blue-500
+// border-s-green-500
 </script>
