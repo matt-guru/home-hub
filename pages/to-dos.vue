@@ -3,7 +3,7 @@
     <section class="p-4 mb-4 border border-b-1">
       <h1 class="text-xl">To-dos</h1>
     </section>
-    <div class="mx-auto overflow-x-auto">
+    <div class="mx-auto overflow-x-auto pb-20">
       <div class="flex flex-wrap">
         <header class="flex w-full">
           <User v-for="user in data[0].people" :user="user" />
@@ -36,6 +36,21 @@ const data = [
         'to-dos': [
           {
             title: 'Kermit task 1',
+            due_date: '2023-02-02',
+            status: 'pending'
+          },
+          {
+            title: 'Kermit task 2',
+            due_date: '2023-02-02',
+            status: 'pending'
+          },
+          {
+            title: 'Kermit task 3',
+            due_date: '2023-02-02',
+            status: 'pending'
+          },
+          {
+            title: 'Kermit task 4',
             due_date: '2023-02-02',
             status: 'pending'
           }

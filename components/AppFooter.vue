@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-around border-t border-gray-200 bg-white shadow-lg">
+  <footer class="fixed inset-x-0 bottom-0 flex justify-around border-t border-gray-200 bg-white shadow-lg">
     <NuxtLink to="/" class="w-[50%] flex flex-col items-center justify-center text-gray-500 p-4">
       <svg
         class="w-6 h-6 mb-1 text-gray-500 group-hover:text-blue-600"
@@ -37,5 +37,5 @@
       </svg>
       <div class="text-sm">Calendar</div>
     </NuxtLink>
-  </div>
+  </footer>
 </template>
