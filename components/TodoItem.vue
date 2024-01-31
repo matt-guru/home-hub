@@ -8,7 +8,7 @@
     </div>
     <div class="flex gap-3 p-4">
       <button
-        class="w-full pointer-events-auto rounded-md px-3 py-2 text-sm font-semibold leading-5 outline outline-1 hover:text-white hover:bg-indigo-500"
+        class="w-full pointer-events-auto rounded-md px-3 py-2 text-sm font-semibold leading-5 outline outline-1 hover:text-white hover:bg-green-400 transition-all"
         @click="completeTask"
       >
         Done
