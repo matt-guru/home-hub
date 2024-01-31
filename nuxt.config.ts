@@ -1,8 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  app: {
-    baseURL: '/home-hub/',
-    buildAssetsDir: 'assets',
-  }
+  $production: {
+    app: {
+      baseURL: '/home-hub/',
+      buildAssetsDir: 'assets',
+    },
+  },
+  modules: ['@nuxtjs/tailwindcss']
 })
