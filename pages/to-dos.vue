@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="p-4 mb-4 border border-b-1">
+    <section class="p-4 mb-4 border border-b-1 bg-white shadow-xl shadow-black/5">
       <h1 class="text-xl">To-dos</h1>
     </section>
     <div class="mx-auto overflow-x-auto pb-20">

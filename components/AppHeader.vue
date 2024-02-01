@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between items-center p-4 text-gray-500 bg-gray-100">
+  <div class="flex justify-between items-center p-4 text-gray-500 bg-white">
     <div>{{ props.hub }}</div>
     <div class="text-3xl">
       <span v-if="showColon">{{ currentTime }}</span>
